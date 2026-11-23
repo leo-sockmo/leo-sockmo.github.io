@@ -1,0 +1,1450 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>91传媒cm - 官方视频品牌门户_原创高清内容平台</title>
+<meta name="description" content="91传媒cm官方网站，专注原创高清视频内容的企业级品牌门户，汇聚专业创作者与多元精品内容，构建值得信赖的视频内容生态与社区。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230d1b2a'/%3E%3Ccircle cx='32' cy='32' r='16' fill='none' stroke='%2334d1b5' stroke-width='4'/%3E%3Cpath d='M27 24l14 8-14 8z' fill='%2334d1b5'/%3E%3C/svg%3E">
+<style>
+:root{
+  --cm-ink:#0d1b2a;
+  --cm-deep:#101f31;
+  --cm-slate:#1c3347;
+  --cm-mint:#34d1b5;
+  --cm-mint-soft:#d9f6f0;
+  --cm-amber:#f2b84b;
+  --cm-fog:#eef3f7;
+  --cm-line:#d6e1ea;
+  --cm-text:#20303f;
+  --cm-muted:#5c7284;
+  --cm-radius:14px;
+  --cm-shadow:0 10px 30px rgba(13,27,42,.10);
+  --cm-anchor-offset:132px;
+}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  margin:0;
+  font-family:"PingFang SC","Microsoft YaHei","Helvetica Neue",Arial,sans-serif;
+  color:var(--cm-text);
+  background:var(--cm-fog);
+  line-height:1.75;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block;}
+a{color:inherit;text-decoration:none;}
+button{font-family:inherit;cursor:pointer;}
+section[id],div[id]{scroll-margin-top:var(--cm-anchor-offset);}
+.cm-wrap{width:min(1180px,92vw);margin:0 auto;}
+
+/* ============ 吸顶顶栏 ============ */
+.cm-sticky-shell{
+  position:sticky;top:0;z-index:80;
+  background:rgba(13,27,42,.97);
+  backdrop-filter:blur(10px);
+  box-shadow:0 6px 22px rgba(0,0,0,.18);
+}
+.cm-announce{
+  background:linear-gradient(90deg,#123c46,#0f2b3a 45%,#1a2c3f);
+  color:#d8f6ef;
+  font-size:13.5px;
+  border-bottom:1px solid rgba(52,209,181,.28);
+}
+.cm-announce-inner{
+  display:flex;align-items:center;gap:12px;
+  width:min(1180px,92vw);margin:0 auto;
+  padding:8px 0;overflow:hidden;
+}
+.cm-announce-tag{
+  flex:0 0 auto;
+  background:var(--cm-mint);color:#06231d;
+  font-weight:700;font-size:12px;
+  padding:2px 9px;border-radius:999px;letter-spacing:.5px;
+}
+.cm-announce-track{
+  flex:1 1 auto;
+  display:flex;gap:34px;
+  white-space:nowrap;overflow:hidden;
+  mask-image:linear-gradient(90deg,transparent,#000 4%,#000 96%,transparent);
+}
+.cm-announce-track span{flex:0 0 auto;}
+.cm-announce-track b{color:var(--cm-amber);font-weight:600;}
+.cm-announce-close{
+  flex:0 0 auto;background:transparent;border:0;color:#8fb7b1;
+  font-size:16px;line-height:1;padding:2px 6px;border-radius:6px;
+}
+.cm-announce-close:hover{color:#fff;background:rgba(255,255,255,.1);}
+
+.cm-header{
+  width:min(1180px,92vw);margin:0 auto;
+  display:flex;align-items:center;gap:22px;
+  padding:12px 0;
+}
+.cm-logo{display:flex;align-items:center;gap:10px;color:#fff;flex:0 0 auto;}
+.cm-logo-mark{
+  width:40px;height:40px;border-radius:11px;
+  background:linear-gradient(135deg,#34d1b5,#1f7f9c);
+  display:grid;place-items:center;flex:0 0 auto;
+  box-shadow:0 6px 16px rgba(52,209,181,.32);
+}
+.cm-logo-mark svg{width:22px;height:22px;}
+.cm-logo-text{display:flex;flex-direction:column;line-height:1.15;}
+.cm-logo-text strong{font-size:17px;letter-spacing:.5px;}
+.cm-logo-text small{font-size:10.5px;color:#7fa6b8;letter-spacing:2.4px;}
+.cm-nav{display:flex;gap:4px;flex:1 1 auto;flex-wrap:wrap;}
+.cm-nav a{
+  color:#c6d8e2;font-size:14px;padding:7px 12px;border-radius:9px;
+  transition:.22s;
+}
+.cm-nav a:hover{color:#fff;background:rgba(52,209,181,.16);}
+.cm-head-tools{display:flex;align-items:center;gap:10px;flex:0 0 auto;}
+.cm-search{
+  display:flex;align-items:center;
+  background:rgba(255,255,255,.08);
+  border:1px solid rgba(255,255,255,.14);
+  border-radius:999px;padding:5px 6px 5px 14px;
+  transition:.22s;
+}
+.cm-search:focus-within{border-color:var(--cm-mint);background:rgba(52,209,181,.1);}
+.cm-search input{
+  width:150px;background:transparent;border:0;outline:0;
+  color:#eaf5f8;font-size:13.5px;
+}
+.cm-search input::placeholder{color:#7f9cab;}
+.cm-search button{
+  background:var(--cm-mint);border:0;color:#06231d;
+  font-size:12.5px;font-weight:700;border-radius:999px;padding:5px 12px;
+}
+.cm-search-result{
+  position:absolute;margin-top:6px;background:#fff;color:var(--cm-text);
+  border-radius:10px;box-shadow:var(--cm-shadow);
+  font-size:13px;padding:9px 14px;max-width:280px;display:none;z-index:90;
+}
+.cm-search-result.is-show{display:block;}
+.cm-btn-cta{
+  background:linear-gradient(135deg,#34d1b5,#1f9e93);
+  color:#04231f;font-weight:700;font-size:14px;
+  border:0;border-radius:999px;padding:9px 20px;
+  box-shadow:0 6px 16px rgba(52,209,181,.34);
+  transition:.22s;
+}
+.cm-btn-cta:hover{transform:translateY(-1px);filter:brightness(1.06);}
+.cm-nav-toggle{
+  display:none;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);
+  color:#d8e8f0;border-radius:9px;padding:7px 11px;font-size:15px;
+}
+.cm-mobile-nav{display:none;background:var(--cm-deep);border-top:1px solid rgba(255,255,255,.08);}
+.cm-mobile-nav.is-open{display:block;}
+.cm-mobile-nav a{
+  display:block;color:#c6d8e2;padding:12px 4vw;font-size:15px;
+  border-bottom:1px solid rgba(255,255,255,.06);
+}
+.cm-mobile-nav a:last-child{border-bottom:0;}
+
+/* ============ 首屏 ============ */
+.cm-hero{
+  background:radial-gradient(1200px 460px at 82% -10%,rgba(52,209,181,.16),transparent 62%),
+             linear-gradient(160deg,#0d1b2a,#132a3d 58%,#0f2233);
+  color:#fff;padding:54px 0 62px;position:relative;overflow:hidden;
+}
+.cm-hero::after{
+  content:"";position:absolute;inset:auto -140px -220px auto;width:520px;height:520px;
+  background:radial-gradient(circle,rgba(242,184,75,.16),transparent 66%);pointer-events:none;
+}
+.cm-hero-grid{
+  display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);
+  gap:44px;align-items:center;position:relative;z-index:2;
+}
+.cm-hero-eyebrow{
+  display:inline-flex;align-items:center;gap:8px;
+  font-size:12.5px;letter-spacing:1.6px;color:var(--cm-mint);
+  border:1px solid rgba(52,209,181,.4);border-radius:999px;
+  padding:5px 14px;margin-bottom:18px;background:rgba(52,209,181,.08);
+}
+.cm-hero-eyebrow i{width:6px;height:6px;border-radius:50%;background:var(--cm-mint);display:block;}
+.cm-hero h1{
+  font-size:clamp(30px,4.2vw,50px);line-height:1.16;margin:0 0 16px;
+  letter-spacing:.5px;font-weight:800;
+}
+.cm-hero h1 em{
+  font-style:normal;
+  background:linear-gradient(100deg,#34d1b5,#8de6d3);
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.cm-hero-lead{color:#b7cdd9;font-size:15.5px;margin:0 0 18px;max-width:540px;}
+.cm-hero-desc{
+  color:#9fb9c7;font-size:14.5px;margin:0 0 26px;max-width:560px;
+  border-left:3px solid rgba(52,209,181,.55);padding-left:14px;
+}
+.cm-hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:30px;}
+.cm-btn-primary{
+  background:linear-gradient(135deg,#34d1b5,#1fa596);color:#04231f;
+  font-weight:700;border:0;border-radius:999px;padding:12px 26px;font-size:15px;
+  box-shadow:0 10px 24px rgba(52,209,181,.3);transition:.22s;
+}
+.cm-btn-primary:hover{transform:translateY(-2px);}
+.cm-btn-ghost{
+  background:transparent;color:#d5e7ef;border:1px solid rgba(214,231,239,.34);
+  border-radius:999px;padding:12px 24px;font-size:15px;transition:.22s;
+}
+.cm-btn-ghost:hover{border-color:var(--cm-mint);color:#fff;background:rgba(52,209,181,.1);}
+.cm-hero-stats{display:flex;flex-wrap:wrap;gap:30px;}
+.cm-hero-stats div{min-width:110px;}
+.cm-hero-stats b{
+  display:block;font-size:26px;color:#fff;line-height:1.2;font-weight:800;
+}
+.cm-hero-stats b span{font-size:14px;color:var(--cm-mint);margin-left:3px;font-weight:600;}
+.cm-hero-stats small{color:#88a6b6;font-size:12.5px;letter-spacing:.6px;}
+.cm-hero-visual{position:relative;}
+.cm-hero-visual img{
+  width:100%;aspect-ratio:16/11;object-fit:cover;
+  border-radius:20px;border:1px solid rgba(255,255,255,.14);
+  box-shadow:0 26px 60px rgba(0,0,0,.42);
+}
+.cm-hero-badge{
+  position:absolute;left:-14px;bottom:-18px;
+  background:#0f2233;border:1px solid rgba(52,209,181,.4);
+  border-radius:14px;padding:10px 16px;display:flex;align-items:center;gap:10px;
+  box-shadow:0 14px 34px rgba(0,0,0,.45);
+}
+.cm-hero-badge strong{color:#fff;font-size:15px;display:block;line-height:1.3;}
+.cm-hero-badge small{color:#7fa6b8;font-size:11.5px;}
+.cm-hero-badge .cm-live{
+  width:9px;height:9px;border-radius:50%;background:#ff5c7a;
+  box-shadow:0 0 0 4px rgba(255,92,122,.2);
+}
+
+/* ============ 通用区块 ============ */
+.cm-section{padding:64px 0;}
+.cm-section.alt{background:#fff;}
+.cm-sec-head{
+  display:flex;align-items:flex-end;justify-content:space-between;
+  gap:20px;margin-bottom:30px;flex-wrap:wrap;
+}
+.cm-sec-title-wrap{min-width:0;}
+.cm-kicker{
+  display:inline-block;font-size:12.5px;letter-spacing:2.6px;color:#1f9e93;
+  font-weight:700;margin-bottom:8px;text-transform:uppercase;
+}
+.cm-sec-title{font-size:clamp(22px,2.6vw,30px);margin:0;letter-spacing:.4px;font-weight:800;color:var(--cm-ink);}
+.cm-sec-sub{color:var(--cm-muted);font-size:14.5px;margin:8px 0 0;max-width:640px;}
+.cm-sec-link{
+  font-size:14px;color:#1f9e93;font-weight:600;white-space:nowrap;
+  border-bottom:1px dashed rgba(31,158,147,.5);padding-bottom:2px;
+}
+.cm-sec-link:hover{color:#0f2233;}
+
+/* 焦点模块 */
+.cm-focus-grid{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:32px;}
+.cm-focus-main{
+  background:#fff;border-radius:var(--cm-radius);overflow:hidden;
+  border:1px solid var(--cm-line);box-shadow:var(--cm-shadow);
+  display:flex;flex-direction:column;
+}
+.cm-focus-main img{width:100%;aspect-ratio:16/9;object-fit:cover;}
+.cm-focus-main-body{padding:22px 24px 26px;}
+.cm-chip{
+  display:inline-block;font-size:12px;font-weight:700;letter-spacing:.6px;
+  color:#0f6d63;background:var(--cm-mint-soft);border-radius:999px;
+  padding:3px 11px;margin-bottom:12px;
+}
+.cm-focus-main h3{margin:0 0 10px;font-size:21px;line-height:1.4;color:var(--cm-ink);}
+.cm-focus-main p{margin:0 0 16px;color:var(--cm-muted);font-size:14.5px;}
+.cm-meta-row{
+  display:flex;flex-wrap:wrap;align-items:center;gap:14px;
+  font-size:13px;color:#7d94a4;
+}
+.cm-meta-row .cm-author{display:inline-flex;align-items:center;gap:7px;color:#355a70;font-weight:600;}
+.cm-avatar-xs{
+  width:26px;height:26px;border-radius:50%;
+  display:grid;place-items:center;font-size:12px;font-weight:700;color:#fff;flex:0 0 auto;
+}
+.cm-focus-list{display:flex;flex-direction:column;gap:14px;}
+.cm-focus-item{
+  background:#fff;border:1px solid var(--cm-line);border-radius:12px;
+  padding:16px 18px;display:grid;grid-template-columns:minmax(0,1fr) auto;
+  gap:12px;align-items:center;transition:.22s;
+}
+.cm-focus-item:hover{transform:translateX(3px);border-color:#9fd6cd;box-shadow:0 8px 20px rgba(31,158,147,.12);}
+.cm-focus-item h4{margin:0 0 6px;font-size:16px;color:var(--cm-ink);line-height:1.45;}
+.cm-focus-item p{margin:0;font-size:13.5px;color:var(--cm-muted);}
+.cm-focus-item .cm-num{
+  font-size:22px;font-weight:800;color:#cfe8e3;font-style:italic;line-height:1;
+}
+
+/* 视频列表 */
+.cm-video-list{display:flex;flex-direction:column;gap:0;border:1px solid var(--cm-line);border-radius:var(--cm-radius);overflow:hidden;background:#fff;}
+.cm-video-row{
+  display:grid;grid-template-columns:56px minmax(0,1fr) auto;
+  gap:18px;padding:20px 22px;align-items:start;
+  border-bottom:1px solid var(--cm-line);transition:.2s;
+}
+.cm-video-row:last-child{border-bottom:0;}
+.cm-video-row:hover{background:#f6fbf9;}
+.cm-video-index{
+  width:44px;height:44px;border-radius:11px;display:grid;place-items:center;
+  background:linear-gradient(135deg,#e9f7f3,#d3efe8);color:#1f8c81;
+  font-weight:800;font-size:15px;
+}
+.cm-video-row h4{margin:0 0 6px;font-size:16.5px;color:var(--cm-ink);line-height:1.45;}
+.cm-video-row p{margin:0 0 9px;font-size:13.8px;color:var(--cm-muted);}
+.cm-tag-row{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:9px;}
+.cm-tag{
+  font-size:11.5px;color:#4d7e77;background:#eef7f5;border-radius:6px;padding:2px 8px;
+  border:1px solid #d8ece7;
+}
+.cm-awareness{display:flex;flex-wrap:wrap;gap:16px;font-size:12.5px;color:#8aa1b0;}
+.cm-video-ops{display:flex;flex-direction:column;gap:8px;align-items:flex-end;}
+.cm-op-btn{
+  border:1px solid var(--cm-line);background:#fff;border-radius:999px;
+  font-size:12.5px;color:#5c7284;padding:5px 13px;transition:.2s;white-space:nowrap;
+}
+.cm-op-btn:hover{border-color:#34d1b5;color:#14867b;}
+.cm-op-btn.is-liked{background:#e8f9f4;border-color:#34d1b5;color:#0f7d72;font-weight:700;}
+.cm-op-btn.is-saved{background:#fff5e2;border-color:#f2b84b;color:#a97610;font-weight:700;}
+
+/* 专题 */
+.cm-topic-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;}
+.cm-topic-card{
+  background:#fff;border:1px solid var(--cm-line);border-radius:var(--cm-radius);
+  padding:22px 22px 20px;display:flex;flex-direction:column;gap:12px;
+  box-shadow:0 4px 14px rgba(13,27,42,.05);transition:.24s;
+}
+.cm-topic-card:hover{transform:translateY(-4px);box-shadow:0 16px 34px rgba(13,27,42,.12);}
+.cm-topic-card h3{margin:0;font-size:18px;color:var(--cm-ink);}
+.cm-topic-card>p{margin:0;font-size:13.8px;color:var(--cm-muted);}
+.cm-status{
+  align-self:flex-start;font-size:11.5px;font-weight:700;letter-spacing:.5px;
+  border-radius:6px;padding:2px 9px;
+}
+.cm-status.live{background:#e6f8f2;color:#12826f;}
+.cm-status.soon{background:#fff3df;color:#a97610;}
+.cm-topic-list{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px;}
+.cm-topic-list li{
+  font-size:13.5px;color:#3f5766;padding-left:16px;position:relative;
+}
+.cm-topic-list li::before{
+  content:"";position:absolute;left:0;top:9px;width:6px;height:6px;border-radius:2px;
+  background:#34d1b5;transform:rotate(45deg);
+}
+
+/* 作者矩阵 */
+.cm-author-list{display:flex;flex-direction:column;gap:0;background:#fff;border:1px solid var(--cm-line);border-radius:var(--cm-radius);overflow:hidden;}
+.cm-author-row{
+  display:grid;grid-template-columns:56px minmax(0,1fr) auto;gap:18px;
+  padding:20px 22px;border-bottom:1px solid var(--cm-line);align-items:center;
+}
+.cm-author-row:last-child{border-bottom:0;}
+.cm-avatar-circle{
+  width:52px;height:52px;border-radius:50%;display:grid;place-items:center;
+  color:#fff;font-size:19px;font-weight:800;flex:0 0 auto;
+}
+.cm-author-row h3{margin:0 0 4px;font-size:16.5px;color:var(--cm-ink);}
+.cm-author-row .cm-field{font-size:12.5px;color:#1f9e93;font-weight:700;letter-spacing:.4px;margin-bottom:6px;display:block;}
+.cm-author-row p{margin:0;font-size:13.5px;color:var(--cm-muted);}
+.cm-author-stats{display:flex;gap:20px;flex-wrap:wrap;justify-content:flex-end;}
+.cm-author-stats div{text-align:right;}
+.cm-author-stats b{display:block;font-size:16px;color:var(--cm-ink);line-height:1.25;}
+.cm-author-stats small{font-size:11.5px;color:#8aa1b0;}
+.cm-author-more{
+  margin-top:14px;border:1px solid var(--cm-line);background:#fff;border-radius:999px;
+  padding:6px 16px;font-size:13px;color:#1f9e93;
+}
+.cm-author-more:hover{border-color:#34d1b5;background:#f1fbf8;}
+
+/* 数据榜单 */
+.cm-rank-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;}
+.cm-rank-card{background:#fff;border:1px solid var(--cm-line);border-radius:var(--cm-radius);padding:22px;box-shadow:0 4px 14px rgba(13,27,42,.05);}
+.cm-rank-card h3{margin:0 0 16px;font-size:16.5px;color:var(--cm-ink);display:flex;align-items:center;gap:9px;}
+.cm-rank-card h3 i{
+  width:8px;height:18px;border-radius:3px;background:linear-gradient(#34d1b5,#1f8c81);display:block;
+}
+.cm-rank-list{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:12px;}
+.cm-rank-list li{display:grid;grid-template-columns:24px minmax(0,1fr) auto;gap:10px;align-items:center;font-size:13.8px;}
+.cm-rank-list li b{
+  width:22px;height:22px;border-radius:6px;display:grid;place-items:center;
+  background:#eef7f5;color:#1f8c81;font-size:12px;font-weight:800;
+}
+.cm-rank-list li:first-child b{background:#34d1b5;color:#04231f;}
+.cm-rank-list span{color:#3f5766;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.cm-rank-list em{font-style:normal;color:#8aa1b0;font-size:12.5px;}
+
+/* 深度解析 */
+.cm-explain{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);gap:40px;align-items:start;}
+.cm-explain h3{font-size:19px;color:var(--cm-ink);margin:0 0 12px;}
+.cm-explain p{font-size:14.6px;color:#41606f;margin:0 0 16px;}
+.cm-explain-side{display:flex;flex-direction:column;gap:16px;}
+.cm-side-card{
+  background:#fff;border:1px solid var(--cm-line);border-left:4px solid #34d1b5;
+  border-radius:10px;padding:16px 18px;
+}
+.cm-side-card h4{margin:0 0 8px;font-size:15px;color:var(--cm-ink);}
+.cm-side-card p{margin:0;font-size:13.5px;color:var(--cm-muted);}
+.cm-side-card img{width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:8px;margin-bottom:10px;}
+
+/* 评价 */
+.cm-comment-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;}
+.cm-comment{
+  background:#fff;border:1px solid var(--cm-line);border-radius:12px;
+  padding:18px 20px;display:flex;flex-direction:column;gap:10px;
+}
+.cm-comment-head{display:flex;align-items:center;gap:10px;}
+.cm-comment-head .cm-avatar-xs{width:32px;height:32px;font-size:13px;}
+.cm-comment-head strong{font-size:14px;color:var(--cm-ink);}
+.cm-comment-head small{font-size:11.5px;color:#9bb0bd;}
+.cm-comment p{margin:0;font-size:13.8px;color:#45606f;}
+.cm-comment-foot{font-size:12px;color:#9bb0bd;display:flex;gap:14px;}
+
+/* FAQ */
+.cm-faq{display:flex;flex-direction:column;gap:12px;max-width:880px;}
+.cm-faq details{
+  background:#fff;border:1px solid var(--cm-line);border-radius:12px;
+  padding:0 20px;transition:.2s;
+}
+.cm-faq details[open]{border-color:#9fd6cd;box-shadow:0 8px 20px rgba(31,158,147,.1);}
+.cm-faq summary{
+  list-style:none;cursor:pointer;padding:16px 0;font-size:15px;font-weight:700;
+  color:var(--cm-ink);display:flex;justify-content:space-between;gap:14px;align-items:center;
+}
+.cm-faq summary::-webkit-details-marker{display:none;}
+.cm-faq summary::after{content:"+";font-size:20px;color:#1f9e93;line-height:1;transition:.2s;}
+.cm-faq details[open] summary::after{content:"–";}
+.cm-faq p{margin:0 0 18px;font-size:13.8px;color:var(--cm-muted);}
+
+/* 动态/动态时间线 */
+.cm-news-list{display:flex;flex-direction:column;gap:0;border-left:2px solid var(--cm-line);margin-left:6px;}
+.cm-news-item{position:relative;padding:0 0 22px 26px;}
+.cm-news-item::before{
+  content:"";position:absolute;left:-7px;top:7px;width:12px;height:12px;border-radius:50%;
+  background:#34d1b5;border:2px solid #fff;box-shadow:0 0 0 2px #34d1b5;
+}
+.cm-news-item time{font-size:12.5px;color:#8aa1b0;font-weight:600;letter-spacing:.4px;}
+.cm-news-item h4{margin:4px 0 6px;font-size:15.5px;color:var(--cm-ink);}
+.cm-news-item p{margin:0;font-size:13.5px;color:var(--cm-muted);}
+
+/* 合作 */
+.cm-partners{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;}
+.cm-partner{
+  background:#fff;border:1px solid var(--cm-line);border-radius:12px;
+  padding:18px 14px;text-align:center;transition:.22s;
+}
+.cm-partner:hover{transform:translateY(-3px);border-color:#9fd6cd;}
+.cm-partner b{display:block;font-size:15px;color:var(--cm-ink);margin-bottom:4px;}
+.cm-partner small{font-size:12px;color:#8aa1b0;}
+
+/* 投稿 CTA */
+.cm-submit-cta{
+  background:linear-gradient(120deg,#0f2233,#164253 55%,#123c46);
+  border-radius:18px;padding:38px 40px;color:#fff;
+  display:flex;align-items:center;justify-content:space-between;gap:26px;flex-wrap:wrap;
+  box-shadow:0 20px 44px rgba(13,27,42,.22);
+}
+.cm-submit-cta h3{margin:0 0 8px;font-size:22px;}
+.cm-submit-cta p{margin:0;color:#a9c6d3;font-size:14px;max-width:560px;}
+
+/* 页脚 */
+.cm-footer{background:#0b1622;color:#9fb9c7;padding:52px 0 0;font-size:13.6px;}
+.cm-footer-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:34px;padding-bottom:36px;}
+.cm-footer h4{color:#fff;font-size:14.5px;margin:0 0 14px;letter-spacing:.6px;}
+.cm-footer ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:9px;}
+.cm-footer a:hover{color:#34d1b5;}
+.cm-footer-brand{display:flex;align-items:center;gap:10px;margin-bottom:14px;}
+.cm-footer-brand strong{color:#fff;font-size:16px;}
+.cm-footer p{margin:0 0 12px;line-height:1.8;color:#8299a8;}
+.cm-footer-bottom{
+  border-top:1px solid rgba(255,255,255,.08);padding:18px 0 26px;
+  display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;
+  font-size:12.5px;color:#6f8795;
+}
+
+/* 弹窗 & Toast */
+.cm-modal-mask{
+  position:fixed;inset:0;background:rgba(8,20,30,.62);z-index:200;
+  display:none;align-items:center;justify-content:center;padding:20px;
+}
+.cm-modal-mask.is-open{display:flex;}
+.cm-modal{
+  background:#fff;border-radius:16px;max-width:520px;width:100%;
+  padding:26px 28px;box-shadow:0 30px 70px rgba(0,0,0,.35);
+  max-height:86vh;overflow:auto;
+}
+.cm-modal h3{margin:0 0 12px;font-size:19px;color:var(--cm-ink);}
+.cm-modal p{font-size:14px;color:var(--cm-muted);margin:0 0 16px;}
+.cm-modal-close{
+  float:right;background:#eef3f7;border:0;border-radius:50%;
+  width:30px;height:30px;font-size:16px;color:#5c7284;line-height:1;
+}
+.cm-modal form{display:flex;flex-direction:column;gap:12px;}
+.cm-modal input,.cm-modal textarea{
+  width:100%;border:1px solid var(--cm-line);border-radius:10px;
+  padding:10px 13px;font-size:14px;font-family:inherit;outline:0;color:var(--cm-text);
+}
+.cm-modal input:focus,.cm-modal textarea:focus{border-color:#34d1b5;}
+.cm-toast{
+  position:fixed;left:50%;bottom:38px;transform:translate(-50%,20px);
+  background:#0f2233;color:#eaf5f8;border-radius:999px;padding:10px 22px;
+  font-size:13.5px;z-index:300;opacity:0;pointer-events:none;transition:.28s;
+  box-shadow:0 14px 34px rgba(0,0,0,.3);border:1px solid rgba(52,209,181,.4);
+}
+.cm-toast.is-show{opacity:1;transform:translate(-50%,0);}
+.cm-top-btn{
+  position:fixed;right:24px;bottom:28px;width:46px;height:46px;border-radius:50%;
+  background:#0f2233;color:#34d1b5;border:1px solid rgba(52,209,181,.4);
+  font-size:18px;z-index:120;display:none;place-items:center;
+  box-shadow:0 10px 24px rgba(0,0,0,.28);
+}
+.cm-top-btn.is-show{display:grid;}
+
+/* 响应式 */
+@media(max-width:980px){
+  .cm-hero-grid{grid-template-columns:minmax(0,1fr);gap:36px;}
+  .cm-focus-grid{grid-template-columns:minmax(0,1fr);}
+  .cm-topic-grid{grid-template-columns:repeat(2,minmax(0,1fr));}
+  .cm-rank-grid{grid-template-columns:repeat(2,minmax(0,1fr));}
+  .cm-explain{grid-template-columns:minmax(0,1fr);}
+  .cm-partners{grid-template-columns:repeat(2,minmax(0,1fr));}
+  .cm-footer-grid{grid-template-columns:1fr 1fr;}
+  .cm-nav{display:none;}
+  .cm-nav-toggle{display:block;}
+  .cm-head-tools .cm-search{display:none;}
+}
+@media(max-width:680px){
+  .cm-search-result{max-width:220px;}
+  .cm-video-row{grid-template-columns:44px minmax(0,1fr);}
+  .cm-video-ops{grid-column:1/-1;flex-direction:row;justify-content:flex-start;flex-wrap:wrap;}
+  .cm-author-row{grid-template-columns:48px minmax(0,1fr);}
+  .cm-author-stats{grid-column:1/-1;justify-content:flex-start;gap:26px;margin-top:8px;}
+  .cm-comment-grid{grid-template-columns:minmax(0,1fr);}
+  .cm-topic-grid{grid-template-columns:minmax(0,1fr);}
+  .cm-rank-grid{grid-template-columns:minmax(0,1fr);}
+  .cm-footer-grid{grid-template-columns:1fr;}
+  .cm-hero-stats{gap:22px;}
+  .cm-hero-badge{left:6px;bottom:-14px;}
+  .cm-submit-cta{padding:28px 22px;}
+  .cm-section{padding:46px 0;}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<!-- 吸顶壳：公告条 + 页头 -->
+<div class="cm-sticky-shell" id="cmTop">
+  <div class="cm-announce" id="cmAnnounce">
+    <div class="cm-announce-inner">
+      <span class="cm-announce-tag">官方发布</span>
+      <div class="cm-announce-track">
+        <span><b>新增</b>《镜头里的城市呼吸·第12集》已上线，4K高清正版首发</span>
+        <span><b>专题</b>「创作者成长计划」第二季开启报名，面向全站原创作者</span>
+        <span><b>榜单</b>11月度热度榜更新，91传媒cm社区口碑内容同步公示</span>
+        <span><b>活动</b>冬日影像挑战赛投稿通道开放，优秀作品享首页推荐位</span>
+      </div>
+      <button class="cm-announce-close" id="cmAnnounceClose" aria-label="关闭公告条">×</button>
+    </div>
+  </div>
+  <header class="cm-header">
+    <a class="cm-logo" href="#cmHome" aria-label="91传媒cm官网首页">
+      <span class="cm-logo-mark">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="9" stroke="#06231d" stroke-width="2"/><path d="M9.5 8.2l6 3.8-6 3.8z" fill="#06231d"/></svg>
+      </span>
+      <span class="cm-logo-text"><strong>91传媒cm</strong><small>VIDEO BRAND</small></span>
+    </a>
+    <nav class="cm-nav" aria-label="主导航">
+      <a href="#cmHome">首页</a>
+      <a href="#cmFocus">焦点内容</a>
+      <a href="#cmTopics">品牌专题</a>
+      <a href="#cmCreators">创作者</a>
+      <a href="#cmRank">榜单</a>
+      <a href="#cmStory">深度解析</a>
+      <a href="#cmFaq">帮助</a>
+    </nav>
+    <div class="cm-head-tools">
+      <div class="cm-search">
+        <input type="search" id="cmSearchInput" placeholder="搜索创作者 / 内容" aria-label="站内搜索">
+        <button type="button" id="cmSearchBtn">搜索</button>
+      </div>
+      <button class="cm-btn-cta" id="cmSubmitOpen" type="button">我要投稿</button>
+      <button class="cm-nav-toggle" id="cmNavToggle" aria-label="展开导航" aria-expanded="false">☰</button>
+    </div>
+  </header>
+  <div class="cm-mobile-nav" id="cmMobileNav">
+    <a href="#cmHome">首页</a>
+    <a href="#cmFocus">焦点内容</a>
+    <a href="#cmTopics">品牌专题</a>
+    <a href="#cmCreators">创作者</a>
+    <a href="#cmRank">榜单</a>
+    <a href="#cmStory">深度解析</a>
+    <a href="#cmFaq">帮助</a>
+  </div>
+  <div class="cm-search-result" id="cmSearchResult" role="status"></div>
+</div>
+
+<!-- 首屏 -->
+<section class="cm-hero" id="cmHome">
+  <div class="cm-wrap cm-hero-grid">
+    <div class="cm-hero-copy">
+      <span class="cm-hero-eyebrow"><i></i>官方网站 · 企业级视频品牌门户</span>
+      <h1>91传媒cm</h1>
+      <p class="cm-hero-lead">以原创高清影像连接创作者与观众，打造值得信赖的视频内容生态与社区。</p>
+      <p class="cm-hero-desc">91传媒cm官方网站定位为面向全年龄段的综合视频品牌平台，深耕原创内容与垂直领域精品，通过专业创作者矩阵与持续运营的社区机制，为企业与用户提供稳定、真实、温暖的影像陪伴。</p>
+      <div class="cm-hero-actions">
+        <a class="cm-btn-primary" href="#cmFocus">浏览精品内容</a>
+        <a class="cm-btn-ghost" href="#cmCreators">认识创作者</a>
+        <a class="cm-btn-ghost" href="#cmTopics">查看品牌专题</a>
+      </div>
+      <div class="cm-hero-stats">
+        <div><b>8,600<span>万+</span></b><small>累计播放量</small></div>
+        <div><b>1,240<span>位</span></b><small>签约创作者</small></div>
+        <div><b>96<span>%</span></b><small>社区好评率</small></div>
+      </div>
+    </div>
+    <div class="cm-hero-visual">
+      <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 550'%3E%3Cdefs%3E%3ClinearGradient id='sky' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0' stop-color='%23163a4a'/%3E%3Cstop offset='1' stop-color='%230c2030'/%3E%3C/linearGradient%3E%3ClinearGradient id='glow' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%2334d1b5' stop-opacity='.9'/%3E%3Cstop offset='1' stop-color='%23f2b84b' stop-opacity='.55'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='800' height='550' fill='url(%23sky)'/%3E%3Ccircle cx='620' cy='130' r='120' fill='url(%23glow)' opacity='.28'/%3E%3Cg opacity='.5' stroke='%2334d1b5' stroke-width='1.2' fill='none'%3E%3Cpath d='M0 400 Q160 330 320 380 T800 340'/%3E%3Cpath d='M0 440 Q200 380 360 425 T800 400'/%3E%3Cpath d='M0 480 Q180 440 340 465 T800 455'/%3E%3C/g%3E%3Crect x='90' y='150' width='300' height='190' rx='16' fill='%2312283a' stroke='%2334d1b5' stroke-opacity='.55'/%3E%3Cpath d='M200 200 l80 45 -80 45z' fill='%2334d1b5'/%3E%3Crect x='430' y='250' width='270' height='150' rx='14' fill='%231a3547' stroke='%23f2b84b' stroke-opacity='.5'/%3E%3Cg fill='%23d9f6f0' fill-opacity='.85'%3E%3Crect x='452' y='278' width='120' height='10' rx='5'/%3E%3Crect x='452' y='302' width='200' height='8' rx='4'/%3E%3Crect x='452' y='322' width='170' height='8' rx='4'/%3E%3Crect x='452' y='342' width='140' height='8' rx='4'/%3E%3C/g%3E%3Cg fill='%2334d1b5' opacity='.75'%3E%3Ccircle cx='180' cy='420' r='7'/%3E%3Ccircle cx='330' cy='452' r='5'/%3E%3Ccircle cx='560' cy='430' r='6'/%3E%3Ccircle cx='690' cy='462' r='4'/%3E%3C/g%3E%3C/svg%3E" alt="91传媒cm官方品牌主视觉：视频播放界面与创作者内容矩阵构图" width="800" height="550">
+      <div class="cm-hero-badge">
+        <span class="cm-live"></span>
+        <div><strong>正在直播 · 创作者开放日</strong><small>每周四 20:00 官方直播间</small></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 焦点内容 -->
+<section class="cm-section alt" id="cmFocus">
+  <div class="cm-wrap">
+    <div class="cm-sec-head">
+      <div class="cm-sec-title-wrap">
+        <span class="cm-kicker">Featured Focus</span>
+        <h2 class="cm-sec-title">焦点内容 · 本周官方精选</h2>
+        <p class="cm-sec-sub">由91传媒cm编辑部与社区共同推选，聚焦原创高清内容与真实生活影像，呈现平台持续运营的精品内容判断。</p>
+      </div>
+      <a class="cm-sec-link" href="#cmRank">查看完整热度榜 →</a>
+    </div>
+
+    <div class="cm-focus-grid">
+      <article class="cm-focus-main">
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 720 405'%3E%3Cdefs%3E%3ClinearGradient id='f1' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%230f2b3a'/%3E%3Cstop offset='1' stop-color='%231b4b52'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='720' height='405' fill='url(%23f1)'/%3E%3Cg stroke='%2334d1b5' stroke-opacity='.45' fill='none'%3E%3Cpath d='M0 300 L120 240 L220 275 L330 205 L450 260 L570 200 L720 250' stroke-width='2'/%3E%3C/g%3E%3Ccircle cx='560' cy='118' r='52' fill='%23f2b84b' fill-opacity='.7'/%3E%3Crect x='70' y='90' width='260' height='160' rx='12' fill='%230d1b2a' stroke='%2334d1b5' stroke-opacity='.5'/%3E%3Cpath d='M175 140 l64 30 -64 30z' fill='%2334d1b5'/%3E%3Cg fill='%23d9f6f0' opacity='.85'%3E%3Crect x='400' y='290' width='240' height='9' rx='4'/%3E%3Crect x='400' y='312' width='190' height='8' rx='4'/%3E%3Crect x='400' y='334' width='150' height='8' rx='4'/%3E%3C/g%3E%3C/svg%3E" alt="焦点内容封面：城市清晨光线下的影像纪录片画面" width="720" height="405">
+        <div class="cm-focus-main-body">
+          <span class="cm-chip">品牌纪录片</span>
+          <h3>《镜头里的城市呼吸》第12集：清晨五点，一座城市开始醒来</h3>
+          <p>91传媒cm原创纪录片团队历时九个月跟拍，记录城市在破晓时分的真实呼吸。本期聚焦早市摊主、清洁工与第一班公交司机，用高清影像呈现普通人一天的开场，也呈现品牌对真实题材的长期坚持。</p>
+          <div class="cm-meta-row">
+            <span class="cm-author"><span class="cm-avatar-xs" style="background:linear-gradient(135deg,#1f9e93,#34d1b5);">林</span>林舟影像</span>
+            <span>播放 286.4万</span>
+            <span>点赞 12.8万</span>
+            <span>收藏 4.6万</span>
+          </div>
+        </div>
+      </article>
+
+      <div class="cm-focus-list">
+        <article class="cm-focus-item">
+          <div>
+            <h4>三分钟看懂：原创短视频的剪辑节奏与情绪落点</h4>
+            <p>教程干货 · 从分镜到声音设计，拆解91传媒cm编辑部的实战方法论。</p>
+            <div class="cm-meta-row"><span class="cm-author">剪辑师阿棠</span><span>播放 41.2万</span></div>
+          </div>
+          <span class="cm-num">01</span>
+        </article>
+        <article class="cm-focus-item">
+          <div>
+            <h4>社区创作者专访：把宠物日常拍成温暖短片的四种方式</h4>
+            <p>人物访谈 · 与签约作者「毛球日记」聊聊持续更新的真实动力。</p>
+            <div class="cm-meta-row"><span class="cm-author">编辑部 · 顾言</span><span>播放 33.7万</span></div>
+          </div>
+          <span class="cm-num">02</span>
+        </article>
+        <article class="cm-focus-item">
+          <div>
+            <h4>城市探索影像：沿河而行的12个街角与光影时刻</h4>
+            <p>城市探索 · 一份可跟随的步行拍摄路线与在地文化观察。</p>
+            <div class="cm-meta-row"><span class="cm-author">行走的镜头</span><span>播放 27.9万</span></div>
+          </div>
+          <span class="cm-num">03</span>
+        </article>
+        <article class="cm-focus-item">
+          <div>
+            <h4>深度测评：家用收音设备横评，哪种适合口播内容</h4>
+            <p>深度测评 · 五种常用设备的噪点、声场与性价比对照。</p>
+            <div class="cm-meta-row"><span class="cm-author">器材观察室</span><span>播放 19.6万</span></div>
+          </div>
+          <span class="cm-num">04</span>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 热门视频流 -->
+<section class="cm-section" id="cmVideos">
+  <div class="cm-wrap">
+    <div class="cm-sec-head">
+      <div class="cm-sec-title-wrap">
+        <span class="cm-kicker">Video Stream</span>
+        <h2 class="cm-sec-title">热门视频流 · 91传媒cm 精品内容</h2>
+        <p class="cm-sec-sub">覆盖教程干货、深度测评、城市探索与生活方式等方向，每条内容均经官方审核与高清转载授权，确保正版品质。</p>
+      </div>
+      <a class="cm-sec-link" href="#cmTopics">按专题浏览 →</a>
+    </div>
+
+    <div class="cm-video-list">
+      <article class="cm-video-row">
+        <div class="cm-video-index">01</div>
+        <div>
+          <h4>从零搭建一个可长期更新的内容栏目：选题、节奏与素材库</h4>
+          <p>91传媒cm创作者学院的系统课第一讲，用真实栏目案例讲述如何稳定产出高品质内容，适合希望持续运营账号的原创作者。</p>
+          <div class="cm-tag-row"><span class="cm-tag">教程干货</span><span class="cm-tag">内容运营</span><span class="cm-tag">原创</span></div>
+          <div class="cm-awareness"><span class="cm-author">阿棠的工作台</span><span>播放 52.6万</span><span>点赞 3.1万</span><span>收藏 1.8万</span></div>
+        </div>
+        <div class="cm-video-ops">
+          <button class="cm-op-btn cm-like-btn" type="button">♡ 点赞</button>
+          <button class="cm-op-btn cm-save-btn" type="button">☆ 收藏</button>
+        </div>
+      </article>
+
+      <article class="cm-video-row">
+        <div class="cm-video-index">02</div>
+        <div>
+          <h4>在菜市场拍出电影感：自然光、手持运镜与色彩还原</h4>
+          <p>以清晨市集为实拍现场，讲解低预算条件下如何用自然光和色彩管理拍出有温度的日常影像，包含完整拍摄清单与参数建议。</p>
+          <div class="cm-tag-row"><span class="cm-tag">实用技巧</span><span class="cm-tag">影像美学</span><span class="cm-tag">高清</span></div>
+          <div class="cm-awareness"><span class="cm-author">行走的镜头</span><span>播放 34.8万</span><span>点赞 2.4万</span><span>收藏 1.2万</span></div>
+        </div>
+        <div class="cm-video-ops">
+          <button class="cm-op-btn cm-like-btn" type="button">♡ 点赞</button>
+          <button class="cm-op-btn cm-save-btn" type="button">☆ 收藏</button>
+        </div>
+      </article>
+
+      <article class="cm-video-row">
+        <div class="cm-video-index">03</div>
+        <div>
+          <h4>宠物日常短片的真实感从哪里来：三次失败的拍摄复盘</h4>
+          <p>毛球日记分享连续三次拍摄失败的完整过程，从光线选择到引导宠物的小技巧，坦诚呈现创作者成长中的真实一面。</p>
+          <div class="cm-tag-row"><span class="cm-tag">萌宠日常</span><span class="cm-tag">创作幕后</span><span class="cm-tag">真实</span></div>
+          <div class="cm-awareness"><span class="cm-author">毛球日记</span><span>播放 28.3万</span><span>点赞 2.7万</span><span>收藏 0.9万</span></div>
+        </div>
+        <div class="cm-video-ops">
+          <button class="cm-op-btn cm-like-btn" type="button">♡ 点赞</button>
+          <button class="cm-op-btn cm-save-btn" type="button">☆ 收藏</button>
+        </div>
+      </article>
+
+      <article class="cm-video-row">
+        <div class="cm-video-index">04</div>
+        <div>
+          <h4>一场关于「陪伴」的街头采访：12位陌生人的回答</h4>
+          <p>91传媒cm原创企划，围绕陪伴这一抽象概念展开街头访谈，以长镜头与留白剪出温暖而有力量的影像表达。</p>
+          <div class="cm-tag-row"><span class="cm-tag">情感故事</span><span class="cm-tag">人物访谈</span><span class="cm-tag">治愈影像</span></div>
+          <div class="cm-awareness"><span class="cm-author">慢镜头工作室</span><span>播放 45.1万</span><span>点赞 4.2万</span><span>收藏 2.1万</span></div>
+        </div>
+        <div class="cm-video-ops">
+          <button class="cm-op-btn cm-like-btn" type="button">♡ 点赞</button>
+          <button class="cm-op-btn cm-save-btn" type="button">☆ 收藏</button>
+        </div>
+      </article>
+
+      <article class="cm-video-row">
+        <div class="cm-video-index">05</div>
+        <div>
+          <h4>2026 家用投影仪实测：亮度、色彩与静音表现横评</h4>
+          <p>器材观察室六个月长期实测，五款主流设备的真实数据与使用场景适配建议，帮助观众做出更专业的消费决策。</p>
+          <div class="cm-tag-row"><span class="cm-tag">深度测评</span><span class="cm-tag">科技前沿</span><span class="cm-tag">专业</span></div>
+          <div class="cm-awareness"><span class="cm-author">器材观察室</span><span>播放 38.9万</span><span>点赞 2.0万</span><span>收藏 1.5万</span></div>
+        </div>
+        <div class="cm-video-ops">
+          <button class="cm-op-btn cm-like-btn" type="button">♡ 点赞</button>
+          <button class="cm-op-btn cm-save-btn" type="button">☆ 收藏</button>
+        </div>
+      </article>
+
+      <article class="cm-video-row">
+        <div class="cm-video-index">06</div>
+        <div>
+          <h4>手作陶艺的一天：从揉泥到上釉的完整记录</h4>
+          <p>记录一位陶艺创作者在工作室的完整一天，保留大量环境声与手部特写，呈现手作DIY过程中的耐心与秩序感。</p>
+          <div class="cm-tag-row"><span class="cm-tag">手作DIY</span><span class="cm-tag">日常记录</span><span class="cm-tag">匠心</span></div>
+          <div class="cm-awareness"><span class="cm-author">陶土与光</span><span>播放 22.4万</span><span>点赞 1.6万</span><span>收藏 1.1万</span></div>
+        </div>
+        <div class="cm-video-ops">
+          <button class="cm-op-btn cm-like-btn" type="button">♡ 点赞</button>
+          <button class="cm-op-btn cm-save-btn" type="button">☆ 收藏</button>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- 品牌专题 -->
+<section class="cm-section alt" id="cmTopics">
+  <div class="cm-wrap">
+    <div class="cm-sec-head">
+      <div class="cm-sec-title-wrap">
+        <span class="cm-kicker">Brand Program</span>
+        <h2 class="cm-sec-title">品牌专题 · 正在更新的企划</h2>
+        <p class="cm-sec-sub">专题是91传媒cm长期运营的内容骨架，每个企划均有明确主题、稳定更新节奏与官方发布机制。</p>
+      </div>
+    </div>
+
+    <div class="cm-topic-grid">
+      <article class="cm-topic-card">
+        <span class="cm-status live">更新中 · 每周三</span>
+        <h3>创作者成长计划 第二季</h3>
+        <p>面向全站原创作者的长期培养企划，包含课程、实操任务与导师点评，帮助创作者从记录走向稳定表达。</p>
+        <ul class="cm-topic-list">
+          <li>第 08 期：把日常记录做成可持续栏目</li>
+          <li>第 09 期：剪辑中的声音设计入门</li>
+          <li>第 10 期：创作者如何与社区建立信任</li>
+        </ul>
+      </article>
+
+      <article class="cm-topic-card">
+        <span class="cm-status live">更新中 · 双周更</span>
+        <h3>城市生活影像档案</h3>
+        <p>以在地文化为线索，用影像记录城市中的普通人与普通时刻，构建可持续更新的城市影像索引。</p>
+        <ul class="cm-topic-list">
+          <li>沿河而行的十二个街角</li>
+          <li>深夜便利店里的三种人生</li>
+          <li>老厂房改造后的新声音</li>
+        </ul>
+      </article>
+
+      <article class="cm-topic-card">
+        <span class="cm-status soon">即将上线 · 12月</span>
+        <h3>冬日影像挑战赛</h3>
+        <p>以「温暖」为命题的社区创作挑战，鼓励创作者提交原创高清短片，优秀作品将获得官方推荐位与企划合作机会。</p>
+        <ul class="cm-topic-list">
+          <li>命题创作：三分钟内的温暖瞬间</li>
+          <li>社区投票与专业评审并行</li>
+          <li>入选作品收录进年度影像合辑</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- 创作者矩阵 -->
+<section class="cm-section" id="cmCreators">
+  <div class="cm-wrap">
+    <div class="cm-sec-head">
+      <div class="cm-sec-title-wrap">
+        <span class="cm-kicker">Creator Matrix</span>
+        <h2 class="cm-sec-title">创作者矩阵 · 91传媒cm 签约作者</h2>
+        <p class="cm-sec-sub">平台以专业审核与长期分成机制陪伴创作者成长，以下为部分在职签约作者与内容方向。</p>
+      </div>
+      <a class="cm-sec-link" href="#cmSubmit">申请成为创作者 →</a>
+    </div>
+
+    <div class="cm-author-list">
+      <article class="cm-author-row">
+        <span class="cm-avatar-circle" style="background:linear-gradient(135deg,#1f9e93,#34d1b5);">林</span>
+        <div>
+          <h3>林舟影像</h3>
+          <span class="cm-field">纪录片 / 城市人文</span>
+          <p>从业九年的纪实影像创作者，擅长长周期跟拍与环境声采集。加入91传媒cm后完成《镜头里的城市呼吸》系列，强调以真实细节建立观众信任，作品多次入选平台年度精品内容。</p>
+        </div>
+        <div class="cm-author-stats">
+          <div><b>128</b><small>作品</small></div>
+          <div><b>86.4万</b><small>粉丝</small></div>
+        </div>
+      </article>
+
+      <article class="cm-author-row">
+        <span class="cm-avatar-circle" style="background:linear-gradient(135deg,#2a6f9e,#4fb3d9);">棠</span>
+        <div>
+          <h3>阿棠的工作台</h3>
+          <span class="cm-field">剪辑教程 / 内容运营</span>
+          <p>前广告公司剪辑指导，现为91传媒cm创作者学院常驻讲师。课程以实操为主，主张「先讲清为什么，再讲怎么做」，其剪辑方法论系列被大量新作者作为入门参考。</p>
+        </div>
+        <div class="cm-author-stats">
+          <div><b>96</b><small>作品</small></div>
+          <div><b>64.2万</b><small>粉丝</small></div>
+        </div>
+      </article>
+
+      <article class="cm-author-row">
+        <span class="cm-avatar-circle" style="background:linear-gradient(135deg,#b9822f,#f2b84b);">毛</span>
+        <div>
+          <h3>毛球日记</h3>
+          <span class="cm-field">萌宠日常 / 治愈影像</span>
+          <p>以一只橘猫和一只边牧的日常为主线，坚持不摆拍、不夸张的拍摄原则。她说宠物内容最珍贵的是耐心，加入平台后持续记录真实生活，用温柔的方式陪伴社区观众。</p>
+        </div>
+        <div class="cm-author-stats">
+          <div><b>214</b><small>作品</small></div>
+          <div><b>112.7万</b><small>粉丝</small></div>
+        </div>
+      </article>
+
+      <article class="cm-author-row">
+        <span class="cm-avatar-circle" style="background:linear-gradient(135deg,#5b4b8a,#9179d1);">行</span>
+        <div>
+          <h3>行走的镜头</h3>
+          <span class="cm-field">城市探索 / 实用技巧</span>
+          <p>独立摄影师，长期在城市与山野之间往返。擅长把复杂拍摄技术拆成普通人可执行的动作，其自然光拍摄系列强调低预算也能拍出有质感的画面，是平台口碑稳定的实用内容来源。</p>
+        </div>
+        <div class="cm-author-stats">
+          <div><b>143</b><small>作品</small></div>
+          <div><b>59.8万</b><small>粉丝</small></div>
+        </div>
+      </article>
+
+      <article class="cm-author-row">
+        <span class="cm-avatar-circle" style="background:linear-gradient(135deg,#3d7a5c,#66b98b);">器</span>
+        <div>
+          <h3>器材观察室</h3>
+          <span class="cm-field">深度测评 / 科技前沿</span>
+          <p>由三位硬件工程师组成的内容小组，坚持长期实测与数据公示。在91传媒cm发布的设备横评以结论克制、过程透明著称，帮助大量创作者做出版面之外的理性消费判断。</p>
+        </div>
+        <div class="cm-author-stats">
+          <div><b>72</b><small>作品</small></div>
+          <div><b>41.3万</b><small>粉丝</small></div>
+        </div>
+      </article>
+
+      <article class="cm-author-row">
+        <span class="cm-avatar-circle" style="background:linear-gradient(135deg,#9a4e4e,#d97575);">陶</span>
+        <div>
+          <h3>陶土与光</h3>
+          <span class="cm-field">手作DIY / 日常记录</span>
+          <p>陶艺工作室主理人，用手作过程的慢节奏对抗信息焦虑。其视频保留大量环境音与手部特写，在平台获得「最治愈手作内容」的评价，也带动了社区手工爱好者的持续交流。</p>
+        </div>
+        <div class="cm-author-stats">
+          <div><b>58</b><small>作品</small></div>
+          <div><b>27.6万</b><small>粉丝</small></div>
+        </div>
+      </article>
+    </div>
+    <div style="margin-top:20px;">
+      <button class="cm-author-more" type="button" data-author="林舟影像|纪录片与城市人文方向，从业九年，擅长长周期跟拍。加入91传媒cm后完成《镜头里的城市呼吸》系列，坚持以真实细节建立与观众的长期信任。">查看作者档案</button>
+    </div>
+  </div>
+</section>
+
+<!-- 数据榜单 -->
+<section class="cm-section alt" id="cmRank">
+  <div class="cm-wrap">
+    <div class="cm-sec-head">
+      <div class="cm-sec-title-wrap">
+        <span class="cm-kicker">Data Board</span>
+        <h2 class="cm-sec-title">数据榜单 · 热度 / 新人 / 口碑</h2>
+        <p class="cm-sec-sub">榜单基于播放、互动、收藏与社区评价综合计算，每月更新，公示口径稳定，体现平台对透明与口碑的长期坚持。</p>
+      </div>
+    </div>
+
+    <div class="cm-rank-grid">
+      <div class="cm-rank-card">
+        <h3><i></i>11月热度榜</h3>
+        <ul class="cm-rank-list">
+          <li><b>1</b><span>镜头里的城市呼吸 · 第12集</span><em>286万</em></li>
+          <li><b>2</b><span>关于陪伴的12位陌生人</span><em>45万</em></li>
+          <li><b>3</b><span>可长期更新的内容栏目搭建</span><em>52万</em></li>
+          <li><b>4</b><span>家用投影仪六个月实测</span><em>38万</em></li>
+          <li><b>5</b><span>菜市场里的电影感光线</span><em>34万</em></li>
+        </ul>
+      </div>
+      <div class="cm-rank-card">
+        <h3><i style="background:linear-gradient(#f2b84b,#c4881f);"></i>新人榜</h3>
+        <ul class="cm-rank-list">
+          <li><b>1</b><span>山野来信 · 户外记录</span><em>7.2万</em></li>
+          <li><b>2</b><span>深夜厨房手记</span><em>6.4万</em></li>
+          <li><b>3</b><span>旧书与旧唱片</span><em>5.1万</em></li>
+          <li><b>4</b><span>通勤路上的三分钟</span><em>4.3万</em></li>
+          <li><b>5</b><span>小城戏曲影像观察</span><em>3.8万</em></li>
+        </ul>
+      </div>
+      <div class="cm-rank-card">
+        <h3><i style="background:linear-gradient(#5b4b8a,#9179d1);"></i>口碑榜</h3>
+        <ul class="cm-rank-list">
+          <li><b>1</b><span>陶土与光 · 手作日常</span><em>4.9分</em></li>
+          <li><b>2</b><span>林舟影像 · 纪实栏目</span><em>4.8分</em></li>
+          <li><b>3</b><span>器材观察室 · 深度测评</span><em>4.7分</em></li>
+          <li><b>4</b><span>毛球日记 · 萌宠短片</span><em>4.7分</em></li>
+          <li><b>5</b><span>阿棠的工作台 · 剪辑课</span><em>4.6分</em></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 深度解析 -->
+<section class="cm-section" id="cmStory">
+  <div class="cm-wrap">
+    <div class="cm-sec-head">
+      <div class="cm-sec-title-wrap">
+        <span class="cm-kicker">Brand Insight</span>
+        <h2 class="cm-sec-title">品牌深度解析 · 91传媒cm 的内容方法论</h2>
+        <p class="cm-sec-sub">从平台定位到内容治理，以下是91传媒cm官方对自身内容生态的完整说明，亦是理解本平台企业价值的关键文本。</p>
+      </div>
+    </div>
+
+    <div class="cm-explain">
+      <div>
+        <h3>一、平台定位：从视频门户到内容生态</h3>
+        <p>91传媒cm作为一家持续运营的视频品牌企业，其起点并不是追求短期流量，而是试图回答一个更长期的问题：在信息过载的环境里，什么样的影像值得被反复观看。平台将自身定位为原创高清内容的聚合与生产机构，同时承担内容社区的运营职责。我们既制作自有企划，也以签约与合作的方式支持独立创作者，形成「官方出品＋创作者供给」的双轨结构。这样的结构让平台既有稳定的精品内容基线，也保有社区层面的多元与活力，避免内容生态趋于单一。</p>
+        <p>在具体执行上，91传媒cm对每一条上线内容都设置了清晰的审核与授权流程。原创内容需要提交素材来源说明，转载内容必须完成正版授权确认，高清规格与音画同步率纳入上线前的技术检查。我们相信，品质不是宣传语，而是可以被流程约束的结果。也正因如此，平台在垂直领域逐步建立起可被验证的口碑，成为不少观众在寻找深度内容时的用户首选之一。</p>
+
+        <h3>二、内容标准：真实、克制与可复用的方法</h3>
+        <p>91传媒cm的内容判断有三个稳定标准。第一是真实：我们鼓励创作者记录真实发生的生活，而不是为了效果而设计冲突。纪录片选题优先考虑普通人的日常，访谈类内容保留被访者的原话与停顿，不做过度的情绪加工。第二是克制：在剪辑与包装上，平台不推崇过度花哨的特效，而是把注意力放在叙事结构与信息密度上。第三是方法可复用：教程与经验分享类内容必须给出可执行步骤，让观众看完能够自己动手，而不是只留下模糊的感叹。</p>
+        <p>为了让这些标准落地，平台建立了创作者学院与内容评审双机制。创作者学院提供选题、拍摄、剪辑与运营的系统课程，帮助新作者建立稳定的创作节奏；内容评审则从选题价值、影像质量、信息准确性与社区适配度四个维度给出反馈。评审不是淘汰机制，而是成长机制，许多如今在平台拥有稳定观众的作者，最初都从评审意见中获得了明确的改进方向。这种陪伴式的运营方式，也是91传媒cm社区氛围相对温和的重要原因。</p>
+
+        <h3>三、社区治理：让互动回归内容本身</h3>
+        <p>视频平台的活力来自互动，但互动也最容易失序。91传媒cm在社区治理上采取「轻量规则＋高响应运营」的方式：评论区保留不同意见，但明确禁止人身攻击与恶意刷屏；点赞、收藏、分享等行为数据公开展示，榜单计算口径固定并每月公示，减少猜测空间；对创作者的保护机制包括恶意评论快速处理与版权申诉通道，确保认真创作的人不必为噪音分心。</p>
+        <p>同时，平台通过专题企划与社区挑战赛，把分散的创作者组织到共同命题下。例如以「温暖」为命题的冬日影像挑战，要求投稿者为原创高清短片，并附上拍摄手记。这类活动不只是比赛，更是一次社区协作：观众参与投票，创作者互相点评，编辑团队提供修改建议，最终入选作品进入年度合辑。对平台而言，这是内容生态的自我更新；对创作者而言，这是被看见的机会；对观众而言，这是一次有参与感的观看体验。</p>
+
+        <h3>四、商业与责任：可持续的品牌经营</h3>
+        <p>作为企业，91传媒cm需要回答商业可持续的问题。我们的选择是把商业化建立在内容信任之上：品牌合作内容必须明确标注，合作不影响评审独立性；创作者分成与内容质量、社区评价挂钩，避免单纯以播放量导向；企业动态与更新日志定期公开，让用户了解平台正在发生什么。这些做法并不激进，但足够稳定，也让平台能够在行业波动中保持持续运营的能力。</p>
+        <p>社会责任方面，平台长期关注影像教育的普及，向高校与社区开放部分课程资源，并为公益题材内容提供制作支持。我们相信，一个视频品牌真正的力量，不只是产出爆款，而是让更多人有能力表达，也让更多真实的故事被温和地看见。91传媒cm官方网站所呈现的所有内容，都是这一理念的具体注脚。</p>
+      </div>
+
+      <aside class="cm-explain-side">
+        <div class="cm-side-card">
+          <h4>三项核心数据</h4>
+          <p>累计播放量 8,600 万+；签约创作者 1,240 位；社区好评率 96%。数据按月更新，口径固定，可在榜单区对照查看。</p>
+        </div>
+        <div class="cm-side-card">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 270'%3E%3Cdefs%3E%3ClinearGradient id='s1' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23e9f7f3'/%3E%3Cstop offset='1' stop-color='%23c9ece3'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='480' height='270' fill='url(%23s1)'/%3E%3Cg stroke='%231f9e93' stroke-width='2' fill='none' opacity='.6'%3E%3Crect x='52' y='48' width='150' height='100' rx='10'/%3E%3Crect x='230' y='82' width='190' height='120' rx='10'/%3E%3C/g%3E%3Cpath d='M96 92 l44 26 -44 26z' fill='%231f9e93'/%3E%3Cg fill='%2314807a' opacity='.8'%3E%3Crect x='252' y='110' width='120' height='8' rx='4'/%3E%3Crect x='252' y='132' width='148' height='8' rx='4'/%3E%3Crect x='252' y='154' width='100' height='8' rx='4'/%3E%3C/g%3E%3Ccircle cx='392' cy='60' r='22' fill='%23f2b84b' fill-opacity='.75'/%3E%3C/svg%3E" alt="品牌方法论示意图：内容审核流程与创作者学院课程结构" width="480" height="270">
+          <h4>内容治理流程</h4>
+          <p>选题评审 → 素材授权确认 → 高清规格检查 → 社区反馈复盘，四步闭环，确保官方发布的每条内容可追溯。</p>
+        </div>
+        <div class="cm-side-card">
+          <h4>使命与愿景</h4>
+          <p>让真实的影像被看见，让认真创作的人被陪伴。平台将持续深耕原创内容与垂直领域，以创新与多元回应社区期待。</p>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- 用户评价 -->
+<section class="cm-section alt" id="cmReviews">
+  <div class="cm-wrap">
+    <div class="cm-sec-head">
+      <div class="cm-sec-title-wrap">
+        <span class="cm-kicker">Community Voice</span>
+        <h2 class="cm-sec-title">社区评价 · 来自真实观众与创作者</h2>
+        <p class="cm-sec-sub">以下评价来自91传媒cm社区不同角色的用户，长度与关注点各不相同，呈现平台口碑的多样面貌。</p>
+      </div>
+    </div>
+
+    <div class="cm-comment-grid">
+      <article class="cm-comment">
+        <div class="cm-comment-head">
+          <span class="cm-avatar-xs" style="background:#1f9e93;">周</span>
+          <div><strong>周女士</strong><br><small>普通观众 · 上海</small></div>
+        </div>
+        <p>喜欢这里纪录片选题的克制，不煽情，但看完会安静很久。画质确实稳定，晚上在电视上看也不糊，这点对家里老人很友好。</p>
+        <div class="cm-comment-foot"><span>👍 128</span><span>2 天前</span></div>
+      </article>
+
+      <article class="cm-comment">
+        <div class="cm-comment-head">
+          <span class="cm-avatar-xs" style="background:#b9822f;">李</span>
+          <div><strong>李同学</strong><br><small>新人创作者 · 成都</small></div>
+        </div>
+        <p>创作者学院的剪辑课真的有用，尤其是关于节奏和留白的那一节，我照着改了第一期视频，完播率从百分之二十多提到了四十。评审给的意见也很具体，不是那种客套话。</p>
+        <div class="cm-comment-foot"><span>👍 96</span><span>5 天前</span></div>
+      </article>
+
+      <article class="cm-comment">
+        <div class="cm-comment-head">
+          <span class="cm-avatar-xs" style="background:#5b4b8a;">陈</span>
+          <div><strong>陈先生</strong><br><small>摄影爱好者 · 杭州</small></div>
+        </div>
+        <p>器材测评那期我看了两遍，数据给得比较实在，没有硬吹。不过希望以后能补一个室外光环境的测试，室内和室外差别还是挺大的。</p>
+        <div class="cm-comment-foot"><span>👍 74</span><span>1 周前</span></div>
+      </article>
+
+      <article class="cm-comment">
+        <div class="cm-comment-head">
+          <span class="cm-avatar-xs" style="background:#3d7a5c;">吴</span>
+          <div><strong>吴老师</strong><br><small>中学教师 · 西安</small></div>
+        </div>
+        <p>把城市探索系列当课堂素材用了一学期，孩子们看得比教材认真。内容干净，家长也不用担心，这点对教育场景很重要，希望继续更新。</p>
+        <div class="cm-comment-foot"><span>👍 143</span><span>1 周前</span></div>
+      </article>
+
+      <article class="cm-comment">
+        <div class="cm-comment-head">
+          <span class="cm-avatar-xs" style="background:#9a4e4e;">郑</span>
+          <div><strong>郑同学</strong><br><small>手作爱好者 · 广州</small></div>
+        </div>
+        <p>陶土那条视频我反复看了三次，环境音保留得很好。就是希望能出个材料清单，新手不太知道从哪买泥和釉。</p>
+        <div class="cm-comment-foot"><span>👍 58</span><span>2 周前</span></div>
+      </article>
+
+      <article class="cm-comment">
+        <div class="cm-comment-head">
+          <span class="cm-avatar-xs" style="background:#2a6f9e;">孙</span>
+          <div><strong>孙企业主</strong><br><small>品牌合作方</small></div>
+        </div>
+        <p>合作流程比预想的规范，合作标识清晰，脚本修改有明确节点，交付准时。作为企业方，我们更看重这种可预期的专业度。</p>
+        <div class="cm-comment-foot"><span>👍 87</span><span>3 周前</span></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- 企业动态 + 合作 + FAQ + 投稿 -->
+<section class="cm-section" id="cmFaq">
+  <div class="cm-wrap">
+    <div class="cm-sec-head">
+      <div class="cm-sec-title-wrap">
+        <span class="cm-kicker">Updates & Help</span>
+        <h2 class="cm-sec-title">企业动态 · 合作 · 常见问题</h2>
+        <p class="cm-sec-sub">平台更新、合作生态与帮助入口集中在此，91传媒cm官方网站始终公开运营信息，方便用户与合作方了解最新进展。</p>
+      </div>
+    </div>
+
+    <div style="display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:38px;align-items:start;" class="cm-bottom-grid">
+      <div>
+        <h3 style="font-size:17px;color:var(--cm-ink);margin:0 0 18px;">企业动态</h3>
+        <div class="cm-news-list">
+          <div class="cm-news-item">
+            <time>2026-11-18</time>
+            <h4>创作者成长计划第二季开放报名</h4>
+            <p>面向全站原创作者开放，包含十期课程与三次实操点评，报名后可在个人中心查看排期。</p>
+          </div>
+          <div class="cm-news-item">
+            <time>2026-11-10</time>
+            <h4>高清播放链路升级，加载更稳定</h4>
+            <p>完成播放器与自适应码率优化，弱网环境下卡顿率下降明显，观看体验持续改善。</p>
+          </div>
+          <div class="cm-news-item">
+            <time>2026-10-28</time>
+            <h4>城市生活影像档案第 3 季上线</h4>
+            <p>新增六座城市的在地文化记录，官方发布首批十二支短片，欢迎创作者参与共创。</p>
+          </div>
+          <div class="cm-news-item">
+            <time>2026-10-12</time>
+            <h4>版权申诉通道与创作者保护机制更新</h4>
+            <p>简化申诉流程，新增恶意评论快速处理入口，进一步保障认真创作者的内容权益。</p>
+          </div>
+        </div>
+
+        <h3 style="font-size:17px;color:var(--cm-ink);margin:34px 0 16px;">合作品牌与伙伴</h3>
+        <div class="cm-partners">
+          <div class="cm-partner"><b>光年影像器材</b><small>设备技术支持</small></div>
+          <div class="cm-partner"><b>青野书店</b><small>线下放映合作</small></div>
+          <div class="cm-partner"><b>陶土公社</b><small>手作内容共创</small></div>
+          <div class="cm-partner"><b>城市文化馆</b><small>在地影像计划</small></div>
+        </div>
+      </div>
+
+      <div>
+        <h3 style="font-size:17px;color:var(--cm-ink);margin:0 0 18px;">常见问题</h3>
+        <div class="cm-faq">
+          <details open>
+            <summary>如何成为 91传媒cm 的签约创作者？</summary>
+            <p>在投稿入口提交三支原创代表作与创作方向说明，编辑部会在七个工作日内给出反馈，通过后进入签约流程并安排内容对接。</p>
+          </details>
+          <details>
+            <summary>平台对原创与正版的要求是什么？</summary>
+            <p>原创内容需保证画面与素材来源清晰，转载或使用第三方素材须提供授权说明。官方审核会核对版权信息，未通过的内容会收到具体修改建议。</p>
+          </details>
+          <details>
+            <summary>投稿后多久可以收到审核结果？</summary>
+            <p>一般内容审核周期为三到五个工作日，专题共创或长纪录片类内容因需评估制作周期，预计七到十个工作日，可在个人中心查看进度。</p>
+          </details>
+          <details>
+            <summary>视频画质有什么标准？</summary>
+            <p>建议提交 1080P 及以上规格，画面稳定、音画同步。平台会对上线内容进行高清规格检查，以确保观众端的观看品质。</p>
+          </details>
+          <details>
+            <summary>合作品牌内容会标注吗？</summary>
+            <p>会。所有商业合作内容均在显著位置标注合作信息，且不影响内容评审的独立性，这是平台长期坚持的透明原则。</p>
+          </details>
+          <details>
+            <summary>社区评论被误处理怎么办？</summary>
+            <p>可通过反馈入口提交申诉，运营团队会在两个工作日内复核。平台鼓励不同意见，但会处理人身攻击与恶意刷屏。</p>
+          </details>
+        </div>
+
+        <div class="cm-submit-cta" id="cmSubmit" style="margin-top:28px;">
+          <div>
+            <h3>把你的影像交给91传媒cm</h3>
+            <p>投稿、报名与共创合作统一入口，官方团队将在一个工作周内与你联系，欢迎带着真实的故事与专业的态度而来。</p>
+          </div>
+          <button class="cm-btn-primary" type="button" id="cmSubmitOpen2">立即投稿</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 页脚 -->
+<footer class="cm-footer">
+  <div class="cm-wrap">
+    <div class="cm-footer-grid">
+      <div>
+        <div class="cm-footer-brand">
+          <span class="cm-logo-mark" style="width:36px;height:36px;border-radius:10px;">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="9" stroke="#06231d" stroke-width="2"/><path d="M9.5 8.2l6 3.8-6 3.8z" fill="#06231d"/></svg>
+          </span>
+          <strong>91传媒cm</strong>
+        </div>
+        <p>91传媒cm官方网站，专注原创高清视频内容的企业级品牌平台。以专业审核与持续运营构建值得信赖的内容生态，陪伴创作者成长，为用户提供有品质的影像内容。</p>
+        <p style="color:#5f7b8a;">官方发布 · 正版授权 · 高清品质</p>
+      </div>
+      <div>
+        <h4>内容频道</h4>
+        <ul>
+          <li><a href="#cmFocus">焦点内容</a></li>
+          <li><a href="#cmVideos">热门视频流</a></li>
+          <li><a href="#cmTopics">品牌专题</a></li>
+          <li><a href="#cmRank">数据榜单</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>社区与创作</h4>
+        <ul>
+          <li><a href="#cmCreators">创作者矩阵</a></li>
+          <li><a href="#cmReviews">社区评价</a></li>
+          <li><a href="#cmSubmit">投稿入口</a></li>
+          <li><a href="#cmFaq">常见问题</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>关于平台</h4>
+        <ul>
+          <li><a href="#cmStory">品牌深度解析</a></li>
+          <li><a href="#cmFaq">企业动态</a></li>
+          <li><a href="#cmStory">内容方法论</a></li>
+          <li><a href="#cmHome">返回首页</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="cm-footer-bottom">
+      <span>© 2026 91传媒cm 官方网站 · 版权所有 · 持续运营中</span>
+      <span>备案号：京ICP备2026000000号-1 · 网络视听内容审核合规</span>
+    </div>
+  </div>
+</footer>
+
+<!-- 通用弹窗 -->
+<div class="cm-modal-mask" id="cmModalMask">
+  <div class="cm-modal" role="dialog" aria-modal="true" aria-labelledby="cmModalTitle">
+    <button class="cm-modal-close" type="button" id="cmModalClose" aria-label="关闭弹窗">×</button>
+    <h3 id="cmModalTitle">投稿</h3>
+    <div id="cmModalBody"></div>
+  </div>
+</div>
+
+<div class="cm-toast" id="cmToast" role="status" aria-live="polite"></div>
+<button class="cm-top-btn" id="cmTopBtn" type="button" aria-label="回到顶部">↑</button>
+
+<script>
+(function () {
+  "use strict";
+
+  /* ---------- 公告条关闭 ---------- */
+  var announceClose = document.getElementById("cmAnnounceClose");
+  var announce = document.getElementById("cmAnnounce");
+  if (announceClose && announce) {
+    announceClose.addEventListener("click", function () {
+      announce.style.display = "none";
+      document.documentElement.style.setProperty("--cm-anchor-offset", "92px");
+    });
+  }
+
+  /* ---------- 移动端导航折叠 ---------- */
+  var navToggle = document.getElementById("cmNavToggle");
+  var mobileNav = document.getElementById("cmMobileNav");
+  if (navToggle && mobileNav) {
+    navToggle.addEventListener("click", function () {
+      var open = mobileNav.classList.toggle("is-open");
+      navToggle.setAttribute("aria-expanded", open ? "true" : "false");
+      navToggle.textContent = open ? "×" : "☰";
+    });
+    mobileNav.addEventListener("click", function (e) {
+      if (e.target.tagName === "A") {
+        mobileNav.classList.remove("is-open");
+        navToggle.setAttribute("aria-expanded", "false");
+        navToggle.textContent = "☰";
+      }
+    });
+  }
+
+  /* ---------- Toast ---------- */
+  var toast = document.getElementById("cmToast");
+  var toastTimer = null;
+  function showToast(msg) {
+    toast.textContent = msg;
+    toast.classList.add("is-show");
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function () {
+      toast.classList.remove("is-show");
+    }, 2200);
+  }
+
+  /* ---------- 搜索反馈 ---------- */
+  var searchInput = document.getElementById("cmSearchInput");
+  var searchBtn = document.getElementById("cmSearchBtn");
+  var searchResult = document.getElementById("cmSearchResult");
+  var searchIndex = [
+    "镜头里的城市呼吸 · 品牌纪录片",
+    "创作者成长计划 第二季",
+    "阿棠的工作台 · 剪辑教程",
+    "陶土与光 · 手作日常记录",
+    "器材观察室 · 家用投影仪实测",
+    "毛球日记 · 萌宠日常短片",
+    "城市生活影像档案",
+    "冬日影像挑战赛",
+    "数据榜单 · 11月热度榜"
+  ];
+  function doSearch() {
+    var kw = (searchInput.value || "").trim();
+    if (!kw) {
+      searchResult.textContent = "请输入关键词，例如「城市」「手作」「测评」";
+      searchResult.classList.add("is-show");
+      return;
+    }
+    var hits = searchIndex.filter(function (item) {
+      return item.indexOf(kw) > -1;
+    });
+    if (hits.length === 0) {
+      hits = searchIndex.filter(function () { return true; }).slice(0, 3);
+      searchResult.textContent = "未精确匹配到「" + kw + "」，为你推荐：" + hits.join(" / ");
+    } else {
+      searchResult.textContent = "找到 " + hits.length + " 条相关：" + hits.slice(0, 3).join(" / ");
+    }
+    searchResult.classList.add("is-show");
+    clearTimeout(searchResult._t);
+    searchResult._t = setTimeout(function () {
+      searchResult.classList.remove("is-show");
+    }, 4200);
+  }
+  if (searchBtn && searchInput) {
+    searchBtn.addEventListener("click", doSearch);
+    searchInput.addEventListener("keydown", function (e) {
+      if (e.key === "Enter") { e.preventDefault(); doSearch(); }
+    });
+  }
+
+  /* ---------- 点赞 & 收藏 ---------- */
+  document.querySelectorAll(".cm-like-btn").forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      var liked = btn.classList.toggle("is-liked");
+      btn.textContent = liked ? "♥ 已赞" : "♡ 点赞";
+      showToast(liked ? "已点赞，感谢支持" : "已取消点赞");
+    });
+  });
+  document.querySelectorAll(".cm-save-btn").forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      var saved = btn.classList.toggle("is-saved");
+      btn.textContent = saved ? "★ 已收藏" : "☆ 收藏";
+      showToast(saved ? "已收藏，可在个人中心查看" : "已取消收藏");
+    });
+  });
+
+  /* ---------- 弹窗 ---------- */
+  var mask = document.getElementById("cmModalMask");
+  var modalTitle = document.getElementById("cmModalTitle");
+  var modalBody = document.getElementById("cmModalBody");
+  var modalClose = document.getElementById("cmModalClose");
+
+  function openModal(title, html) {
+    modalTitle.textContent = title;
+    modalBody.innerHTML = html;
+    mask.classList.add("is-open");
+  }
+  function closeModal() {
+    mask.classList.remove("is-open");
+  }
+  if (modalClose) modalClose.addEventListener("click", closeModal);
+  if (mask) {
+    mask.addEventListener("click", function (e) {
+      if (e.target === mask) closeModal();
+    });
+  }
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape") closeModal();
+  });
+
+  var submitHtml = '<p>填写基本信息后提交，官方团队将在一个工作周内联系你。请确保作品为原创并符合平台内容标准。</p>' +
+    '<form id="cmSubmitForm">' +
+    '<input type="text" placeholder="你的昵称" required>' +
+    '<input type="email" placeholder="联系邮箱" required>' +
+    '<textarea rows="4" placeholder="简述作品方向、代表作品与创作计划" required></textarea>' +
+    '<button class="cm-btn-primary" type="submit">提交投稿</button>' +
+    '</form>';
+
+  var submitOpen = document.getElementById("cmSubmitOpen");
+  var submitOpen2 = document.getElementById("cmSubmitOpen2");
+  [submitOpen, submitOpen2].forEach(function (btn) {
+    if (btn) {
+      btn.addEventListener("click", function () {
+        openModal("投稿 / 报名", submitHtml);
+      });
+    }
+  });
+  document.querySelectorAll(".cm-author-more").forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      var raw = btn.getAttribute("data-author") || "";
+      var parts = raw.split("|");
+      openModal(parts[0] || "作者档案",
+        '<p>' + (parts[1] || "") + '</p><p style="color:#8aa1b0;">可通过站内搜索查看该作者的最新作品与专题动态。</p>');
+    });
+  });
+
+  document.addEventListener("submit", function (e) {
+    if (e.target && e.target.id === "cmSubmitForm") {
+      e.preventDefault();
+      closeModal();
+      showToast("投稿已提交，请留意邮箱通知");
+    }
+  });
+
+  /* ---------- 回到顶部 ---------- */
+  var topBtn = document.getElementById("cmTopBtn");
+  window.addEventListener("scroll", function () {
+    if (window.scrollY > 520) {
+      topBtn.classList.add("is-show");
+    } else {
+      topBtn.classList.remove("is-show");
+    }
+  }, { passive: true });
+  topBtn.addEventListener("click", function () {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+
+  /* ---------- 数字滚动（核心数据） ---------- */
+  var statNumbers = document.querySelectorAll(".cm-hero-stats b");
+  var statDone = false;
+  function animateStats() {
+    if (statDone) return;
+    var rect = document.querySelector(".cm-hero-stats");
+    if (!rect) return;
+    var r = rect.getBoundingClientRect();
+    if (r.top < window.innerHeight && r.bottom > 0) {
+      statDone = true;
+      statNumbers.forEach(function (el) {
+        var suffix = el.querySelector("span");
+        var suffixText = suffix ? suffix.outerHTML : "";
+        var targetText = el.textContent.replace(/\s/g, "");
+        var num = parseFloat(targetText.replace(/[^\d.]/g, ""));
+        if (isNaN(num)) return;
+        var isFloat = targetText.indexOf(".") > -1;
+        var start = 0;
+        var duration = 900;
+        var t0 = null;
+        function step(ts) {
+          if (!t0) t0 = ts;
+          var p = Math.min((ts - t0) / duration, 1);
+          var val = num * (1 - Math.pow(1 - p, 3));
+          var shown = isFloat ? val.toFixed(1) : Math.floor(val).toLocaleString("en-US");
+          el.innerHTML = shown + suffixText;
+          if (p < 1) requestAnimationFrame(step);
+          else {
+            el.innerHTML = (isFloat ? num.toFixed(1) : num.toLocaleString("en-US")) + suffixText;
+          }
+        }
+        requestAnimationFrame(step);
+      });
+    }
+  }
+  window.addEventListener("scroll", animateStats, { passive: true });
+  animateStats();
+})();
+</script>
+</body>
+        </html>
